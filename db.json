@@ -1,0 +1,46 @@
+{
+  "sales": [
+    {
+      "id": "1",
+      "product": "Laptop",
+      "quantity": 15,
+      "price": 899.99,
+      "paymentMode": "cash"
+    },
+    {
+      "id": "2",
+      "product": "Smartphone",
+      "quantity": 32,
+      "price": 699.99,
+      "paymentMode": "mpesa"
+    },
+    {
+      "id": "3",
+      "product": "Desk Chair",
+      "quantity": 8,
+      "price": 149.99,
+      "paymentMode": "card"
+    },
+    {
+      "id": "ad37",
+      "product": "supu",
+      "price": 10,
+      "quantity": 10,
+      "paymentMode": "cash"
+    },
+    {
+      "id": "71e4",
+      "product": "miik",
+      "price": 240,
+      "quantity": 3,
+      "paymentMode": "cash"
+    },
+    {
+      "id": "f4c2",
+      "product": "w",
+      "price": 2,
+      "quantity": 2,
+      "paymentMode": "cash"
+    }
+  ]
+}

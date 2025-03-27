@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sale Monitor</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax
+  .googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <style>
+    .total-row {
+      font-weight: bold;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1 class="text-center">SALE MONITOR</h1>
+  <p><em>Kindly make sure every sale made is recorded and the correct data is stored securely.</em></p>
+  
+  <div class="row">
+    <div class="col-md-5">
+        <input type="text" id="productName" class="form-control" placeholder="Product Name">
+    </div>
+    <div class="col-md-3">
+        <input type="number" id="productPrice" class="form-control" placeholder="Price ($)">
+    </div>
+    <div class="col-md-2">
+        <input type="number" id="productQuantity" class="form-control" placeholder="Qty">
+    </div>
+    <div class="col-md-2">
+        <select id="Payment" class="form-control">
+            <option value="cash">Cash</option>
+            <option value="card">Card</option>
+            <option value="mpesa">Mpesa</option>
+        </select>
+    </div>
+    <div class="col-md-2 mt-2">
+        <button class="btn btn-success btn-block" onclick="addSale()">Add Sale</button>
+    </div>
+  </div>
+
+  <!-- Sales Table -->
+  <div class="mt-4">
+    <h2>Recorded Sales</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price ($)</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Payment Mode</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="salesTable">
+        <!-- Sales will be added here -->
+      </tbody>
+      <tfoot>
+        <tr class="total-row">
+          <td colspan="3">Grand Total</td>
+          <td id="grandTotal">$0.00</td>
+          <td colspan="2"></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
